@@ -6,8 +6,8 @@ I use an ESP8266 Chip with Wifi and an 0.96" OLED display with SPI to display op
 
 ## Needed Libraries
 - WifiManager
-- SSD1306 from squix78
-- ArduinoJson.h
+- SSD1306 display library from squix78
+- ArduinoJson
 
 ## Setup
 Within the code you need to add PagerDutyDomain and PagerDutyToken with your PagerDuty settings. Compile it, deploy it, setup Wifi and be happy

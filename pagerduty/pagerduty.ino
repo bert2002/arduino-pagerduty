@@ -44,10 +44,9 @@ void GetTime() {
 }
 
 void PagerDuty() {
-	String PagerDutyDomain = "";
-	String PagerDutyToken = "";
-	String PagerDutySha1 = "14 D0 B5 B1 42 FB 25 4A D3 72 71 A6 CC 8F 36 FD 9F 53 B5 40";
-  String DeviceID = String(ESP.getChipId());
+  String PagerDutyDomain = "";
+  String PagerDutyToken = "";
+  String PagerDutySha1 = "14 D0 B5 B1 42 FB 25 4A D3 72 71 A6 CC 8F 36 FD 9F 53 B5 40";
   StaticJsonBuffer<200> jsonBuffer;
   HTTPClient http;
   http.begin("https://" + PagerDutyDomain + ".pagerduty.com/api/v1/incidents/count?status=triggered", PagerDutySha1 );
